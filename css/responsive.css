@@ -1,0 +1,143 @@
+/* Responsive styles for CollegeTips Gallery */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .header .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav ul {
+        margin-top: 15px;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 36px;
+    }
+    
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .filter-container {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        margin-bottom: 10px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-logo, .footer-links, .footer-social {
+        margin-bottom: 20px;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 0;
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+    
+    .section-header h2 {
+        font-size: 26px;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-container {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .nav-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .fullscreen-image {
+        max-height: 75vh;
+    }
+    
+    .image-caption h3 {
+        font-size: 18px;
+    }
+    
+    .image-caption p {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 24px;
+    }
+    
+    .section-header h2 {
+        font-size: 22px;
+    }
+    
+    .section-header p {
+        font-size: 14px;
+    }
+    
+    .filter-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}

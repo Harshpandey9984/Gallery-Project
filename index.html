@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CollegeTips Photo Gallery</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>CollegeTips<span>Gallery</span></h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Capturing College Memories</h2>
+        <p>Explore our curated collection showcasing the best of CollegeTips - from team collaborations to creative projects and campus highlights!</p>
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <div class="container">      <div class="section-header">
+        <h2>Our Photo Gallery</h2>
+        <p>Browse through our awesome collection of Team Vibes, Creative Campaigns, Work Hard Play Hard, Behind-The-Scenes, and Campus Life moments!</p>
+      </div>
+
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="team-vibes">Team Vibes 🤝</button>
+        <button class="filter-btn" data-filter="creative-campaigns">Creative Campaigns 🎨</button>
+        <button class="filter-btn" data-filter="work-hard-play-hard">Work Hard, Play Hard 🥳</button>
+        <button class="filter-btn" data-filter="behind-the-scenes">Behind-The-Scenes 🎥</button>
+        <button class="filter-btn" data-filter="campus-life">Campus Life 🏫</button>
+      </div>
+
+      <div class="gallery-container">
+        <!-- Gallery items will be dynamically added here via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Fullscreen modal for image viewing -->
+  <div id="fullscreen-modal" class="fullscreen-modal">
+    <span class="close-modal">&times;</span>
+    <div class="modal-content">
+      <div class="modal-navigation">
+        <button id="prev-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <img id="fullscreen-image" src="" alt="">
+      <div class="image-caption">
+        <h3 id="fullscreen-title"></h3>
+        <p id="fullscreen-description"></p>
+        <span id="fullscreen-category" class="category-badge"></span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>CollegeTips<span>Gallery</span></h2>
+          <p>Showcasing the best moments of college life</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CollegeTips Gallery. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/gallery-data-fixed.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
