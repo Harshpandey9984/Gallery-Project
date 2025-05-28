@@ -1,0 +1,163 @@
+/* Responsive styles for different screen sizes */
+
+/* Large laptops and desktops */
+@media (min-width: 1200px) {
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Small laptops and tablets (landscape) */
+@media (max-width: 1199px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets and large phones */
+@media (max-width: 992px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-logo, .footer-links, .footer-social {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-links ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 80%;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .header .container {
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .nav ul {
+    justify-content: center;
+    margin-top: var(--spacing-sm);
+  }
+  
+  .nav ul li {
+    margin: 0 var(--spacing-sm);
+  }
+  
+  .hero {
+    padding-top: calc(100px + var(--spacing-xxl));
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .modal-navigation {
+    padding: 0;
+  }
+  
+  #fullscreen-image {
+    max-height: 70vh;
+  }
+  
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .gallery-item {
+    height: 250px;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .section-header p {
+    font-size: 0.9rem;
+  }
+  
+  .nav ul {
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+  
+  .nav ul li {
+    margin: var(--spacing-xs);
+  }
+  
+  .close-modal {
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+  }
+  
+  .image-caption h3 {
+    font-size: 1.2rem;
+  }
+  
+  .image-caption p {
+    font-size: 0.8rem;
+  }
+}
